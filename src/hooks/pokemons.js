@@ -20,7 +20,7 @@ export const useFetchApi = () => {
         organizingEffect();
     }, [])
 
-    const organizingEffect = async () => {
+    const organizingEffect = async (pokebola) => {
         try {
             const result = await axios.all(urlPokemons.map(pokemon => axios.get(pokemon)))
             const updatedPokemons = result.map(response => response.data);

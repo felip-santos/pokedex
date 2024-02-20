@@ -1,34 +1,4 @@
-import styled from 'styled-components';
-
-const ContentCard = styled.div`
-    width: 250px;
-    height: 250px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    border-radius: 15px;
-    justify-content: center;
-    background-color: #F9F9F9;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .4);
-`
-
-const ImageCard = styled.img`
-    width: 40%;
-    object-position: center top;
-`
-
-const TitleCard = styled.h2`
-    color: #222;
-    font-size: 1.3rem;
-    margin: 2rem 0 1rem;
-    text-transform: capitalize;
-`
-
-const TextCard = styled.p`
-    color: #333;
-    font-size: 1rem;
-    text-transform: capitalize;
-`
+import { ContentCard, ImageCard, TextCard, TitleCard } from "./style";
 
 export const Card = ({ pokemon }) => {
 
